@@ -1,0 +1,58 @@
+# C/C++, ejercicio básico (KO), U6L30NB1Ejercc1_RNC
+
+## Descripcion del problema a resolver
+
+Leer dos numeros enteros y obtener el triple producto de la suma de los dos numeros leidos
+
+**Consideraciones**
+
+- Leer del teclado dos numeros enteros (valores numericos sin decimales)
+- Utilizar el estatuto de asignacion (=) para asignar a una variable el resultado de calcular el triple producto de la suma de los dos numeros leidos.
+- Mostrar en la pantalla del usuario el resultado.
+
+A continuacion puedes ver el codigo del programa. Toma en cuenta que lo que aparace despues de tres diagonales son solo comentarios para que veas lo que significa cada instruccion del programa.
+
+Te pedimos completar lo que falta y luego probar el programa con diferentes datos. Para probar tu programa debes escibir todo tu programa solucion en la seccion de la derecha de esta misma pagina. En la seccion de la derecha ya esta una parte de la solucion de este ejercicio.
+
+Recuerda que el usuario de nuestro programa es la persona que ve,
+en la ventana de "Salida", los resultados que envia tu programa solucion
+(con cada instruccion "cout<<").
+
+### Ejemplo:
+
+**Entrada:**
+
+3 4
+
+**Salida:**
+
+21
+
+## Código
+
+> [!NOTE]  
+> Antes de continuar, asegúrate de comprender el funcionamiento del código.  
+> Si tienes dudas, consulta la documentación, haz un comentario para recibir ayuda o preguntale a tu profesor.
+
+```
+#include <iostream>
+using namespace std;
+///El objetivo de este ejemplo es mostrar al usuario como leer dos datos
+///Y asignar a otra variable el triple producto de la suma de los dos numeros.
+int main(){
+/// Primero debemos declarar cada variable  que usaremos
+  int dato1, dato2, resultado;///Declaramos tres variables de tipo entero
+///son tres variables donde podemos almacenar
+///un valor a la vez que sea numerico de tipo entero, es decir sin decimales
+  cin>>dato1>>dato2; ///el programa lee del teclado tres datos de entrada,
+///y cada dato sera almacenado en variable diferente
+  resultado = 3*(dato1+dato2);      ///asignamos a "resultado" el resultado
+///de la expresion aritmetica 3 * (dato1+dato2)
+  cout<<resultado<<endl;///El programa muestra en la pantalla del usuario 
+///el contenido de la variable "resultado"
+  return 0;
+}
+//Recuerda que el usuario de nuestro programa es la persona que ve,
+//en la ventana de "Salida", los resultados que envia tu programa solucion
+//(con cada instruccion "cout<<").
+```
